@@ -1,0 +1,14 @@
+-------------------------------------------------------------------------------
+Test set: gt.edu.umg.ingenieria.sistemas.parcial2.inventario.InventarioApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 3.034 s <<< FAILURE! - in gt.edu.umg.ingenieria.sistemas.parcial2.inventario.InventarioApplicationTests
+contextLoads(gt.edu.umg.ingenieria.sistemas.parcial2.inventario.InventarioApplicationTests)  Time elapsed: 0.003 s  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'productoController': Unsatisfied dependency expressed through field 'productoService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'productoService': Unsatisfied dependency expressed through field 'productoRepository'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'productoRepository': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Validation failed for query for method public abstract java.util.List gt.edu.umg.ingenieria.sistemas.parcial2.inventario.dao.ProductoRepository.findAll()!
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'productoService': Unsatisfied dependency expressed through field 'productoRepository'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'productoRepository': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Validation failed for query for method public abstract java.util.List gt.edu.umg.ingenieria.sistemas.parcial2.inventario.dao.ProductoRepository.findAll()!
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'productoRepository': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Validation failed for query for method public abstract java.util.List gt.edu.umg.ingenieria.sistemas.parcial2.inventario.dao.ProductoRepository.findAll()!
+Caused by: java.lang.IllegalArgumentException: Validation failed for query for method public abstract java.util.List gt.edu.umg.ingenieria.sistemas.parcial2.inventario.dao.ProductoRepository.findAll()!
+Caused by: java.lang.IllegalArgumentException: org.hibernate.hql.internal.ast.QuerySyntaxException: Producto is not mapped [select sl from Producto order by sl.name desc]
+Caused by: org.hibernate.hql.internal.ast.QuerySyntaxException: Producto is not mapped [select sl from Producto order by sl.name desc]
+Caused by: org.hibernate.hql.internal.ast.QuerySyntaxException: Producto is not mapped
+

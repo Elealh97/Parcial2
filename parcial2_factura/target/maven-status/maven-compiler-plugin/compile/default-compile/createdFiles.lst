@@ -1,0 +1,6 @@
+gt/edu/umg/ingenieria/sistemas/parcial2/factura/dao/DetalleFacturaRepository.class
+gt/edu/umg/ingenieria/sistemas/parcial2/factura/controller/CabeceraFacturaController.class
+gt/edu/umg/ingenieria/sistemas/parcial2/factura/service/FacturaService.class
+gt/edu/umg/ingenieria/sistemas/parcial2/factura/FacturaApplication.class
+gt/edu/umg/ingenieria/sistemas/parcial2/factura/dao/CabeceraFacturaRepository.class
+gt/edu/umg/ingenieria/sistemas/parcial2/factura/controller/DetalleFacturaController.class
